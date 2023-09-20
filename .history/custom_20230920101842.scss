@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas{
+    height: 100% !important;
+}
+
+.radicalGradient{
+    background-color: rgb(55, 65, 81);
+    background-image: radial-gradient(at 50% 40%, rgb(21, 128, 61) 0, transparent 65%);
+  
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas{
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.sky-star{
+
+   position: absolute;
+   background-color: white;
+  
+}
+
+.radicalGradient{
+    background-color: rgb(0, 0, 0);
+    background-image: radial-gradient(at 50% 70%, #841b8280 0, transparent 65%);
+  
+}
+
+.herostar{
+    width: 25px;
+    height: 25px;
+}
+
+.primarynav a{
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
