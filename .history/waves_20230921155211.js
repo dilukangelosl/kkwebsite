@@ -1,6 +1,7 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
 const heroSection = document.getElementById("herosection");
+import Scrollbar from 'smooth-scrollbar';
 
 camera.position.set(0, 25, 200);
 var renderer = new THREE.WebGLRenderer({

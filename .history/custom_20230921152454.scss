@@ -15,7 +15,7 @@
   }
 }
 
- canvas {
+canvas {
   height: 80% !important;
   position: absolute;
   bottom: 0;
@@ -23,9 +23,6 @@
   right: 0;
   margin: 0 auto;
   width: 100% !important;
-}
-#herosection2 canvas {
-  
 }
 
 .herobtn {
@@ -523,5 +520,4 @@
 
 .navblack{
   background-color: black !important;
-  z-index: 9999;
 }

@@ -15,5 +15,8 @@
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5",
     "vite-plugin-minify": "^1.5.2"
+  },
+  "dependencies": {
+    "smooth-scrollbar": "^8.8.4"
   }
 }

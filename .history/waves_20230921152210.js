@@ -1,7 +1,6 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
 const heroSection = document.getElementById("herosection");
-
 camera.position.set(0, 25, 200);
 var renderer = new THREE.WebGLRenderer({
   antialias: true,
@@ -10,9 +9,8 @@ var renderer = new THREE.WebGLRenderer({
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-const dom = renderer.domElement;
-heroSection.appendChild(dom);
 
+heroSection.appendChild(renderer.domElement);
 window.addEventListener( 'resize', function(){
 
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -109,14 +107,9 @@ function createRandomStars(){
 
 createRandomStars();
 
-const nav = document.querySelector('nav');
+
 
 window.addEventListener('scroll', function(e) {
   const scrollPosition = window.scrollY;
-  if (scrollPosition > 150) {
-    
-    nav.classList.add('navblack');
-  } else {
-    nav.classList.remove('navblack');
-  }
+  console.log(scrollPosition)
 });

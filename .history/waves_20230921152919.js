@@ -1,7 +1,7 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
 const heroSection = document.getElementById("herosection");
-
+const heroSection2 = document.getElementById("herosection2");
 camera.position.set(0, 25, 200);
 var renderer = new THREE.WebGLRenderer({
   antialias: true,
@@ -12,7 +12,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 const dom = renderer.domElement;
 heroSection.appendChild(dom);
-
+heroSection2.appendChild(dom);
 window.addEventListener( 'resize', function(){
 
     camera.aspect = window.innerWidth / window.innerHeight;
