@@ -16,7 +16,7 @@ window.addEventListener( 'resize', function(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
-    renderer.setSize( window.innerWidth, window.innerHeight);
+    renderer.setSize( window.innerWidth, window.innerHeight );
 
 }, false );
 
@@ -30,7 +30,7 @@ window.addEventListener( 'resize', function(){
 
 var speed = 0.18; // 1 is normal speed
 var pWidth = 100;
-var pHeight = 100;
+var pHeight = 10;
 var planeGeom = new THREE.PlaneBufferGeometry(500, 500, pWidth, pHeight).toGrid();
 planeGeom.rotateX(-Math.PI * .5);
 

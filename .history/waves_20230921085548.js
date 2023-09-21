@@ -7,7 +7,7 @@ var renderer = new THREE.WebGLRenderer({
  // alpha: true // Enable alpha for transparency
 });
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(1200,1200);
 
 
 heroSection.appendChild(renderer.domElement);

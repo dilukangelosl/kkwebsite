@@ -22,44 +22,45 @@ canvas {
 }
 
 .herobtn {
-  background: linear-gradient(
-    120deg,
-    #cd378a 0.07%,
-    #cc25e9 34.91%,
-    #9b04e7 50.51%,
-    #ba2175 65.6%,
-    #d00876 83.28%,
-    #9f30e8 97.84%
-  );
-  background-size: 200% 100%;
-  box-shadow: 0 0.375rem 1.5rem 0 rgba(0, 0, 0, 0.5);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
+    background: linear-gradient(120deg,#fdf263,#f79ca0 10%,#cc25e9 17.5%,#a904fb 25%,#5803d8 33%,#713de1 42%,#9f30e8 50%,#713de1 58%,#5803d8 67%,#a904fb 75%,#cc25e9 82.5%,#f79ca0 90%,#fdf263);
+    background-size: 200% 100%;
+    box-shadow: 0 0.375rem 1.5rem 0 rgba(0,0,0,.5);
+    position: relative;
+}
+.herobtn:before{
+    background: linear-gradient(120deg,#fdf263 .07%,#f79ca0 19.31%,#cc25e9 34.91%,#a904fb 50.51%,#5803d8 65.6%,#713de1 83.28%,#9f30e8 97.84%);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.1875rem;
+    border-radius: 2.1875rem;
+    -webkit-mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite: source-out;
+    mask-composite: exclude;
 }
 
-.herobtn:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    105deg,
-    transparent,
-    hsla(0, 0%, 100%, 0.4) 70%,
-    transparent
-  );
-  pointer-events: none;
-  transform: translate3d(-100%, 0, 0);
-  transition: all 0s ease 0s;
+.herobtn:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(105deg,transparent,hsla(0,0%,100%,.4) 70%,transparent);
+    pointer-events: none;
+    transform: translate3d(-100%,0,0);
+    transition: all 0s ease 0s;
+        position: relative;
 }
 
 .herobtn:hover:after {
-  transform: translate3d(100%, 0, 0);
-  transition: all 0.6s ease 0s;
+    transform: translate3d(100%,0,0);
+    transition: all .6s ease 0s
 }
 
 .sky-star {

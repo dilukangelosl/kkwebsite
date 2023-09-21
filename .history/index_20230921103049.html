@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="stylesheet" href="./custom.scss" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-black">
+    <!-- navbar start  -->
+    <nav class="bg-transparent fixed w-full py-[25px] z-20">
+      <div class="md:px-5 lg:px-5 py-5 mx-auto bg-transparent 2xl:w-[70%]">
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <div>
+            <a
+              href="#"
+              class="flex items-center space-x-2 py-2 px-3 text-gray-700"
+            >
+              <img src="/logo.svg" alt="" width="150" />
+            </a>
+          </div>
+          <!-- primary nav -->
+          <div
+            class="hidden md:flex items-center justify-center space-x-[40px] primarynav"
+          >
+            <a href="#" class="nav-a nav-text">Whitepaper</a>
+            <a href="#" class="nav-a nav-text">About Us</a>
+            <a href="#" class="nav-a nav-text">Platform tax</a>
+            <a href="#" class="nav-a nav-text">Rev Share</a>
+            <a href="#" class="nav-a nav-text">Tokenomics</a>
+          </div>
+          <!-- secondary nav -->
+          <div class="hidden md:flex items-center space-x-3 my-1">
+            <a
+              href="#"
+              class="px-3 w-10 h-10 rounded-full overflow-hidden flex justify-center items-center relative radicalAnimationOnHover"
+            >
+              <img src="/medium.svg" alt="" class="w-full h-full z-10" />
+            </a>
+
+            <a
+              href="#"
+              class="px-3 w-10 h-10 rounded-full overflow-hidden flex justify-center items-center relative radicalAnimationOnHover"
+            >
+              <img src="/x.svg" alt="" class="w-full h-full z-10" />
+            </a>
+
+            <a
+              href="#"
+              class="px-3 w-10 h-10 rounded-full overflow-hidden flex justify-center items-center relative radicalAnimationOnHover"
+            >
+              <img src="/plane.svg" alt="" class="w-full h-full z-10" />
+            </a>
+
+            <!-- <a href="#">
+                <img src="/plane.svg" alt="">
+              </a>
+
+              <a href="#">
+                <img src="/x.svg" alt="">
+              </a> -->
+          </div>
+
+          <!-- mobile button -->
+          <div class="md:hidden flex">
+            <button>
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="md:hidden flex">
+          <a
+            href="#"
+            class="block py-2 px-4 text-sm hover:bg-gray-200 transition duration-300"
+            >Mobile 1</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero -->
+    <div
+      id="herosection"
+      class="flex w-full h-[100vh] bg-black radicalGradient relative"
+    >
+      <div
+        class="container mx-auto flex flex-col justify-center items-center z-10"
+      >
+        <div class="grid md:grid-cols-2 px-4 md:px-0">
+          <div class="herocol1 col-span-1">
+            <h1 class="text-white text-4xl md:text-7xl">
+              Est laboriom voluptatis quas nostrum asptur
+            </h1>
+            <p class="text-gray-400 text-xl md:text-2xl mt-5 mb-8">
+              Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+              dolorem consequatur expedita. Reiciendis qui velit et quia
+              mollitia. Voluptates voluptates et culpa tempore nihil earum et.
+            </p>
+            <div class="flex flex-row space-x-5">
+              <a
+                href="#"
+                class="h-12 w-36 text-white font-bold flex justify-center items-center rounded-sm herobtn"
+                >Launch dApp</a
+              >
+              <a
+                href="#"
+                class="h-12 w-36 text-black font-bold flex justify-center items-center rounded-sm bg-white"
+                >Whitepaper</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endhero -->
+
+    <div
+      class="transitionsection w-full h-16 top-[-60px] relative bg-gradient-to-b from-transparent via-black to-black"
+    ></div>
+
+    <!-- FEATURES  -->
+    <div class="container mx-auto z-10 px-3 pb-12 pt-12">
+      <div class="grid grid-cols-2">
+        <div class="ourfeatures">
+          <div
+            class="sectiontitle w-44 rounded-sm bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]"
+          >
+            <div
+              class="h-full w-full py-1 rounded-sm bg-black"
+            >
+              <span class="block mx-auto bg-clip-text text-transparent w-full text-center  bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC]">OUR FEATURES</span>
+            </div>
+          </div>
+
+          <h1 class="text-white text-4xl md:text-6xl my-5">Est laboriom voluptatis quas nostrum asptur</h1>
+          <p class="text-gray-300 text-xl md:text-2xl font-light">
+            Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+            dolorem consequatur expedita. Reiciendis qui velit et quia mollitia.
+            Voluptates voluptates et culpa tempore nihil earum et.
+          </p>
+          <div class="icon-list">
+            <div class="icon-list-item flex flex-row space-x-2 items-center">
+             <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+              <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+             </div>
+              
+              <span class="text-gray-50 text-xl md:text-xl"
+                >Alias omnis earum voluptatem quaerat cumque est quidem.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FEATURES -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.95.0/build/three.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.95.0/examples/js/controls/OrbitControls.js"></script> -->
+    <script>
+      var vertShader = `
+      uniform float size;
+      uniform float time;
+      uniform float amplitude;
+      uniform float waveLength;
+      varying float ampNormalized;
+        void main() {
+        vec3 p = position;
+        float wLength = 1. / waveLength;
+        p.y = sin(position.x * wLength + time) * cos(position.z * wLength  + time) * amplitude;
+        ampNormalized = abs(- amplitude  + p.y) / (amplitude * 2.);
+          vec4 mvPosition = modelViewMatrix * vec4( p, 1.0 );
+        gl_PointSize = size * ( 300.0 / length( mvPosition.xyz ) );
+        gl_Position = projectionMatrix * mvPosition;
+          }
+    `;
+      var fragShader = `
+        uniform vec3 color;
+      uniform float opacity;
+      varying float ampNormalized;
+      void main() {
+        vec3 c = color;
+        gl_FragColor = vec4(c, opacity);
+      }
+    `;
+    </script>
+    <script>
+      Object.assign(THREE.PlaneBufferGeometry.prototype, {
+        toGrid: function () {
+          let segmentsX = this.parameters.widthSegments || 1;
+          let segmentsY = this.parameters.heightSegments || 1;
+          let indices = [];
+          for (let i = 0; i < segmentsY + 1; i++) {
+            let index11 = 0;
+            let index12 = 0;
+            for (let j = 0; j < segmentsX; j++) {
+              index11 = (segmentsX + 1) * i + j;
+              index12 = index11 + 1;
+              let index21 = index11;
+              let index22 = index11 + (segmentsX + 1);
+              indices.push(index11, index12);
+              if (index22 < (segmentsX + 1) * (segmentsY + 1) - 1) {
+                indices.push(index21, index22);
+              }
+            }
+            if (
+              index12 + segmentsX + 1 <=
+              (segmentsX + 1) * (segmentsY + 1) - 1
+            ) {
+              indices.push(index12, index12 + segmentsX + 1);
+            }
+          }
+          this.setIndex(indices);
+          return this;
+        },
+      });
+    </script>
+
+    <script src="./waves.js" type="module"></script>
+  </body>
+</html>

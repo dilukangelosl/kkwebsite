@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .nav-a {
+      @apply text-xl text-transparent bg-gradient-to-r from-white via-white to-white  bg-clip-text  hover:from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
+    }
+    .nav-text {
+        @apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm 
+    }
+  }
+
+canvas{
+    height: 80% !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.herobtn{
+    background: linear-gradient(120deg,#fdf263,#f79ca0 10%,#cc25e9 17.5%,#9b04e7 25%,#5803d8 33%,#713de1 42%,#9f30e8 50%,#713de1 58%,#5803d8 67%,#9b04e7 75%,#cc25e9 82.5%,#f79ca0 90%,#fdf263);
+    box-shadow: inset 0 0 0 0 hsla(0,0%,100%,.4), 0 0 0 0 rgba(204,37,233,.4);
+    transition: all .6s ease 0s;
+}
+
+.sky-star{
+
+   position: absolute;
+   background-color: white;
+  
+}
+
+.radicalGradient{
+    background-color: rgb(0, 0, 0);
+    background-image: radial-gradient(at 50% 70%, #841b8280 0, transparent 65%);
+    overflow: hidden;
+  
+}
+
+.herostar{
+    width: 25px;
+    height: 25px;
+}
+
+.primarynav a{
+   
+    // font-size: 16px;
+    // line-height: 19px;
+    
+}
+
+.radicalAnimationOnHover{
+    background: linear-gradient(280deg,#cd378a .07%,#d25298 19.31%,#cc408d 34.91%,#cd2280 50.51%,#ba2175 65.6%,#b82274 83.28%,#d00876 97.84%)
+}
+.radicalAnimationOnHover:hover {
+    animation: ButtonBorderSwirl .56s cubic-bezier(.8,0,.2,1) infinite
+
+}
+
+.radicalAnimationOnHover:after{
+    content: "";
+    width: 94%;
+    height: 94%;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+}
+
+@keyframes ButtonBorderSwirl {
+    0% {
+        background: linear-gradient(280deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    3.3333333333% {
+        background: linear-gradient(292deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    6.6666666667% {
+        background: linear-gradient(304deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    10% {
+        background: linear-gradient(316deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    13.3333333333% {
+        background: linear-gradient(328deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    16.6666666667% {
+        background: linear-gradient(340deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    20% {
+        background: linear-gradient(352deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    23.3333333333% {
+        background: linear-gradient(364deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    26.6666666667% {
+        background: linear-gradient(376deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    30% {
+        background: linear-gradient(388deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    33.3333333333% {
+        background: linear-gradient(400deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    36.6666666667% {
+        background: linear-gradient(412deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    40% {
+        background: linear-gradient(424deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    43.3333333333% {
+        background: linear-gradient(436deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    46.6666666667% {
+        background: linear-gradient(448deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    50% {
+        background: linear-gradient(460deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    53.3333333333% {
+        background: linear-gradient(472deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    56.6666666667% {
+        background: linear-gradient(484deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    60% {
+        background: linear-gradient(496deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    63.3333333333% {
+        background: linear-gradient(508deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    66.6666666667% {
+        background: linear-gradient(520deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    70% {
+        background: linear-gradient(532deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    73.3333333333% {
+        background: linear-gradient(544deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    76.6666666667% {
+        background: linear-gradient(556deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    80% {
+        background: linear-gradient(568deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    83.3333333333% {
+        background: linear-gradient(580deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    86.6666666667% {
+        background: linear-gradient(592deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    90% {
+        background: linear-gradient(604deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    93.3333333333% {
+        background: linear-gradient(616deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    96.6666666667% {
+        background: linear-gradient(628deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+
+    to {
+        background: linear-gradient(640deg,#cd378a .07%,#f79ca0 19.31%,#cc25e9 34.91%,#9b04e7 50.51%,#ba2175 65.6%,#d00876 83.28%,#9f30e8 97.84%)
+    }
+}

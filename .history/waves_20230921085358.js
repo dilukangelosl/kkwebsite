@@ -16,7 +16,7 @@ window.addEventListener( 'resize', function(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
-    renderer.setSize( window.innerWidth, window.innerHeight);
+    renderer.setSize( window.innerWidth, window.innerHeight );
 
 }, false );
 
@@ -46,7 +46,7 @@ var seaDown = new THREE.LineSegments(planeGeom, new THREE.ShaderMaterial({
       value: 0
     },
     amplitude: {
-      value: 15
+      value: 10
     },
     waveLength: {
       value: Math.PI * 10
