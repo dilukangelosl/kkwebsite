@@ -115,7 +115,7 @@ function addOverLayToHero(){
 }
 
 createRandomStars();
-addOverLayToHero();
+
 
 const nav = document.querySelector('nav');
 
