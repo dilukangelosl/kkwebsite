@@ -98,7 +98,7 @@ function createRandomStars(){
      const top = getRandomInt(0, 40);
      const left = getRandomInt(0, 100);
 
-     const puslseSeconds = getRandomInt(1,2) + 0.5;
+     const puslseSeconds = getRandomInt(1,2) + 1;
    container.classList.add("h-10","w-10","flex","justify-center","items-center");
    //container.classList.add("h-10","w-10",`animate-pulse`);
     container.style.position = "absolute";
