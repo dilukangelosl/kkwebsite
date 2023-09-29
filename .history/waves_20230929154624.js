@@ -103,7 +103,6 @@ function createRandomStars(){
     container.style.position = "absolute";
     container.style.top = `${top}%`;
     container.style.left = `${left}%`;
-    container.style.animation = `pulse ${puslseSeconds}s ease-in-out infinite`
    
     heroSection.appendChild(container);
 }

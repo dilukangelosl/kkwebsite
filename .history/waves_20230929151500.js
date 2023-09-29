@@ -98,12 +98,11 @@ function createRandomStars(){
      const left = getRandomInt(0, 100);
 
      const puslseSeconds = getRandomInt(1,3);
-   container.classList.add("h-10","w-10",`staranim`);
+   container.classList.add("h-10","w-10",`animate-[pulse_${puslseSeconds}s_ease-in-out_infinite]`);
    //container.classList.add("h-10","w-10",`animate-pulse`);
     container.style.position = "absolute";
     container.style.top = `${top}%`;
     container.style.left = `${left}%`;
-    container.style.animation = `pulse ${puslseSeconds}s ease-in-out infinite`
    
     heroSection.appendChild(container);
 }
