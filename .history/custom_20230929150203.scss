@@ -13,7 +13,7 @@
     @apply text-xl text-transparent bg-gradient-to-r from-white via-white to-white  bg-clip-text  hover:from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
   }
   .nav-text {
-    @apply 2xl:text-2xl xl:text-xl lg:text-2xl md:text-base sm:text-sm;
+    @apply 2xl:text-2xl xl:text-xl lg:text-sm md:text-base sm:text-sm;
   }
 
   .ourfeatures{
