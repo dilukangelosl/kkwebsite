@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./custom.scss" />
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black" id="scrollbody">
+  <!-- navbar start  -->
+  <nav class="bg-transparent fixed top-0 w-full z-[9999]">
+    <div class="px-0 py-3 md:px-5 lg:px-5 md:py-5 mx-auto bg-transparent w-full md:w-[85%] lg:w-[80%] 2xl:w-[80%] lg:container">
+      <div class="flex justify-between items-center">
+        <!-- logo -->
+        <div>
+          <a href="#" class="flex items-center space-x-2 py-2 px-3 text-gray-700">
+            <img src="/logo.svg" alt="" width="150"  />
+          </a>
+        </div>
+        <!-- primary nav -->
+        <div class="hidden md:flex items-center justify-center space-x-[40px] primarynav">
+          <a href="#" class="nav-a nav-text text-[18px]">Whitepaper</a>
+          <a href="#" class="nav-a nav-text text-[18px]">About Us</a>
+          <a href="#" class="nav-a nav-text text-[18px]">Platform tax</a>
+          <a href="#" class="nav-a nav-text text-[18px]">Rev Share</a>
+          <a href="#" class="nav-a nav-text text-[18px]">Tokenomics</a>
+        </div>
+        <!-- secondary nav -->
+        <div class="hidden md:flex items-center space-x-3 my-1">
+          <a href="#"
+            class="px-3 w-10 h-10 rounded-full overflow-hidden flex justify-center items-center relative radicalAnimationOnHover">
+            <img src="/medium.svg" alt="" class="w-full h-full z-10" />
+          </a>
+
+          <a href="#"
+            class="px-3 w-10 h-10 rounded-full overflow-hidden flex justify-center items-center relative radicalAnimationOnHover">
+            <img src="/x.svg" alt="" class="w-full h-full z-10" />
+          </a>
+
+          <a href="#"
+            class="px-3 w-10 h-10 rounded-full overflow-hidden flex justify-center items-center relative radicalAnimationOnHover">
+            <img src="/plane.svg" alt="" class="w-full h-full z-10" />
+          </a>
+
+          <!-- <a href="#">
+                <img src="/plane.svg" alt="">
+              </a>
+
+              <a href="#">
+                <img src="/x.svg" alt="">
+              </a> -->
+        </div>
+
+        <!-- mobile button -->
+        <div class="md:hidden flex">
+          <button>
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <!-- <div class="md:hidden flex">
+          <a
+            href="#"
+            class="block py-2 px-4 text-sm hover:bg-gray-200 transition duration-300"
+            >Mobile 1</a
+          >
+        </div> -->
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- hero -->
+  <div id="herosection" class="flex w-full min-h-[100vh] bg-black radicalGradient relative my-20">
+
+    <div class="container mx-auto flex flex-col justify-center items-center z-10 md:px-10 lg:w-[80%]">
+      <div class="grid md:grid-cols-2 px-0 md:px-0">
+        <div class="herocol1 col-span-1">
+
+          <h1 class="text-white text-4xl md:text-7xl">
+            Est laboriom voluptatis quas nostrum asptur
+          </h1>
+          <p class="text-gray-400 text-xl md:text-2xl mt-5 mb-8">
+            Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+            dolorem consequatur expedita. Reiciendis qui velit et quia
+            mollitia. Voluptates voluptates et culpa tempore nihil earum et.
+          </p>
+          <div class="flex flex-row space-x-5">
+            <a href="#"
+              class="h-12 w-36 text-white font-bold flex justify-center items-center rounded-sm herobtn">Launch dApp</a>
+            <a href="#"
+              class="h-12 w-36 text-black font-bold flex justify-center items-center rounded-sm bg-white">Whitepaper</a>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="md:hidden w-full flex justify-end py-5">
+        <img src="/heroimage.png" alt="" class="w-2/3 my-3" data-aos="fade" data-aos-duration="500">
+      </div>
+    </div>
+    <img src="/heroimage.png" alt="" class="hidden md:block absolute z-20 h-[70vh] right-0 top-[15vh]" data-aos="fade-left"
+      data-aos-duration="1000">
+
+  </div>
+  <!-- endhero -->
+
+  <!-- <img src="/transition.png" alt=""  class="w-full absolute bottom-[-130px]"></div> -->
+
+  <!-- <div
+      class="transitionsection w-full h-[200px] md:top-[-100px] relative overflow-hidden "
+    >
+  -->
+
+ 
+  <div class="flex flex-col gap-32">
+    <!-- FEATURES 1  -->
+    <div class="container mx-auto z-10 px-8 md:px-10 md:pt-8 lg:px-28">
+      <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2">
+        <div class="ourfeatures">
+          <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
+            <div class="h-full w-full py-1 rounded-md bg-black">
+              <span
+                class="block mx-auto bg-clip-text text-transparent w-full text-center bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC]">OUR
+                FEATURES</span>
+            </div>
+          </div>
+
+          <h1 class="text-white text-4xl md:text-6xl my-5">
+            Est laboriom voluptatis quas nostrum asptur
+          </h1>
+          <p class="text-gray-300 text-xl md:text-2xl font-light">
+            Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+            dolorem consequatur expedita. Reiciendis qui velit et quia mollitia.
+            Voluptates voluptates et culpa tempore nihil earum et.
+          </p>
+          <div class="icon-list mt-7">
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="featureImage flex flex-col justify-end items-center">
+          <img src="/screen1.png" alt="" class="w-full" data-aos="fade" data-aos-duration="2000" />
+        </div>
+      </div>
+    </div>
+    <!-- END FEATURES -->
+
+    <!-- FEATURES 2 -->
+    <div class="container mx-auto z-10 px-8 md:px-10  lg:px-28">
+      <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2">
+        <div class="featureImage flex flex-col justify-end items-center pr-20">
+          <img src="/screen2.png" alt="" class="w-full" data-aos="fade" data-aos-duration="2000" />
+        </div>
+
+        <div class="ourfeatures">
+          <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
+            <div class="h-full w-full py-1 rounded-md bg-black">
+              <span
+                class="block mx-auto bg-clip-text text-transparent w-full text-center bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC]">PLATFORM
+                TAX</span>
+            </div>
+          </div>
+
+          <h1 class="text-white text-4xl md:text-6xl my-5">dApp Revenue</h1>
+          <p class="text-gray-300 text-xl md:text-2xl font-light">
+            Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+            dolorem consequatur expedita. Reiciendis qui velit et quia mollitia.
+            Voluptates voluptates et culpa tempore nihil earum et.
+          </p>
+          <div class="icon-list mt-7">
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FEATURES -->
+
+
+    <!-- FEATURES 3 -->
+    <div class="container mx-auto z-10 px-8 md:px-10  lg:px-28">
+      <div class="flex flex-col gap-8 md:grid md:grid-cols-2">
+        <div class="ourfeatures">
+          <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
+            <div class="h-full w-full py-1 rounded-md bg-black">
+              <span
+                class="block mx-auto bg-clip-text text-transparent w-full text-center bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC]">STAKING</span>
+            </div>
+          </div>
+
+          <h1 class="text-white text-4xl md:text-6xl my-5">
+            Rev Share
+          </h1>
+          <p class="text-gray-300 text-xl md:text-2xl font-light">
+            Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+            dolorem consequatur expedita. Reiciendis qui velit et quia mollitia.
+            Voluptates voluptates et culpa tempore nihil earum et.
+          </p>
+          <div class="icon-list mt-7">
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="featureImage flex flex-col justify-end items-center">
+          <img src="/screen3.png" alt="" class="w-full" data-aos="fade" data-aos-duration="2000" />
+        </div>
+      </div>
+    </div>
+    <!-- END FEATURES -->
+
+
+    <!-- FEATURES 4 -->
+    <div class="container mx-auto px-8 z-10 md:px-10 pb-32  lg:px-28">
+      <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2">
+        <div class="featureImage flex flex-col justify-end items-center">
+          <img src="/screen4.png" alt="" class="w-full" data-aos="fade" data-aos-duration="2000" />
+        </div>
+
+        <div class="ourfeatures">
+          <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
+            <div class="h-full w-full py-1 rounded-md bg-black">
+              <span
+                class="block mx-auto bg-clip-text text-transparent w-full text-center bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC]">Tokenomics</span>
+            </div>
+          </div>
+
+          <h1 class="text-white text-4xl md:text-6xl my-5">dApp Revenue</h1>
+          <p class="text-gray-300 text-xl md:text-2xl font-light">
+            Sint corporis quo. Accusamus veniam cum sed rerum officiis quia
+            dolorem consequatur expedita. Reiciendis qui velit et quia mollitia.
+            Voluptates voluptates et culpa tempore nihil earum et.
+          </p>
+          <div class="icon-list mt-7">
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+
+            <div class="icon-list-item flex flex-row space-x-4 items-center mb-5">
+              <div class="iconholder rounded-md p-2 bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-9 h-9">
+                <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+
+              <span class="text-gray-400 text-xl md:text-xl font-light">Alias omnis earum voluptatem quaerat cumque est
+                quidem.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FEATURES -->
+  </div>
+
+  <!-- footer hero -->
+  <div class="container mx-auto md:px-10 py-16 px-5">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-3 flex flex-col">
+        <div class="text-xl font-bold text-white">Links</div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-6">
+          <div class="footer-links text-white text-lg flex flex-col space-y-4 font-light">
+            <a href="#">Coinmarketcap</a>
+            <a href="#">Coingecko</a>
+            <a href="#">Nomics</a>
+            <a href="#">Dextools</a>
+          </div>
+
+          <div class="footer-links text-white text-lg flex flex-col space-y-4 font-light">
+            <a href="#">Coinmarketcap</a>
+            <a href="#">Coingecko</a>
+            <a href="#">Nomics</a>
+            <a href="#">Dextools</a>
+          </div>
+
+          <div class="footer-links text-white text-lg flex flex-col space-y-4 font-light">
+            <a href="#">Coinmarketcap</a>
+            <a href="#">Coingecko</a>
+            <a href="#">Nomics</a>
+            <a href="#">Dextools</a>
+          </div>
+
+          <div class="footer-links text-white text-lg flex flex-col space-y-4 font-light">
+            <a href="#">Coinmarketcap</a>
+            <a href="#">Coingecko</a>
+            <a href="#">Nomics</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-1">
+        <div
+          class="flex flex-col justify-between items-center md:items-start lg:items-start xl:items-start h-full gap-10">
+          <img src="/logo.svg" alt="" class="w-36 hidden md:block lg:block">
+          <p class="text-gray-400 text-lg font-light text-center md:text-left lg:text-left xl:text-left ">Nobis fugiat
+            laudantium nulla optio. Voluptatem est ad nesciunt. Beatae blanditiis delectus corporis quia tempora.</p>
+          <span class="block copyright text-white font-bold">© 2023 by Company</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.95.0/build/three.min.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.95.0/examples/js/controls/OrbitControls.js"></script> -->
+  <script>
+    var vertShader = `
+      uniform float size;
+      uniform float time;
+      uniform float amplitude;
+      uniform float waveLength;
+      varying float ampNormalized;
+        void main() {
+        vec3 p = position;
+        float wLength = 1. / waveLength;
+        p.y = sin(position.x * wLength + time) * cos(position.z * wLength  + time) * amplitude;
+        ampNormalized = abs(- amplitude  + p.y) / (amplitude * 2.);
+          vec4 mvPosition = modelViewMatrix * vec4( p, 1.0 );
+        gl_PointSize = size * ( 300.0 / length( mvPosition.xyz ) );
+        gl_Position = projectionMatrix * mvPosition;
+          }
+    `;
+    var fragShader = `
+        uniform vec3 color;
+      uniform float opacity;
+      varying float ampNormalized;
+      void main() {
+        vec3 c = color;
+        gl_FragColor = vec4(c, opacity);
+      }
+    `;
+  </script>
+  <script>
+    Object.assign(THREE.PlaneBufferGeometry.prototype, {
+      toGrid: function () {
+        let segmentsX = this.parameters.widthSegments || 1;
+        let segmentsY = this.parameters.heightSegments || 1;
+        let indices = [];
+        for (let i = 0; i < segmentsY + 1; i++) {
+          let index11 = 0;
+          let index12 = 0;
+          for (let j = 0; j < segmentsX; j++) {
+            index11 = (segmentsX + 1) * i + j;
+            index12 = index11 + 1;
+            let index21 = index11;
+            let index22 = index11 + (segmentsX + 1);
+            indices.push(index11, index12);
+            if (index22 < (segmentsX + 1) * (segmentsY + 1) - 1) {
+              indices.push(index21, index22);
+            }
+          }
+          if (
+            index12 + segmentsX + 1 <=
+            (segmentsX + 1) * (segmentsY + 1) - 1
+          ) {
+            indices.push(index12, index12 + segmentsX + 1);
+          }
+        }
+        this.setIndex(indices);
+        return this;
+      },
+    });
+  </script>
+
+  <script src="./waves.js" type="module"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
