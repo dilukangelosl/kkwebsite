@@ -10,7 +10,7 @@
 
 @layer components {
   .nav-a {
-    @apply text-xl text-transparent bg-gradient-to-r from-white via-white to-white  bg-clip-text  hover:from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
+    @apply text-xl bg-gradient-to-r from-white via-white to-white  bg-clip-text  hover:from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
   }
   .nav-text {
     @apply 2xl:text-2xl xl:text-xl lg:text-2xl md:text-base sm:text-sm;
@@ -21,7 +21,7 @@
   }
 
   .header-effect {
-    @apply text-xl text-transparent bg-gradient-to-r  bg-clip-text from-[#c887ab] via-[#cd2280] to-indigo-500 animate-text duration-1000;
+    @apply text-xl text-transparent  bg-clip-text from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
   }
 }
 

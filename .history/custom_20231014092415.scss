@@ -21,7 +21,7 @@
   }
 
   .header-effect {
-    @apply text-xl text-transparent bg-gradient-to-r  bg-clip-text from-[#c887ab] via-[#cd2280] to-indigo-500 animate-text duration-1000;
+    @apply text-xl text-transparent  bg-clip-text from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
   }
 }
 
