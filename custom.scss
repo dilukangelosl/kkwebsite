@@ -9,11 +9,20 @@
 }
 
 @layer components {
+
+  .icon-list{
+    @apply mr-3
+  }
+  .feature-text{
+    @apply min-h-[60px] text-slate-200 text-[14px] md:text-[16px] font-light flex flex-col justify-center;
+  }
   .nav-a {
     @apply text-xl text-transparent bg-gradient-to-r from-white via-white to-white  bg-clip-text  hover:from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
   }
+
+  
   .nav-text {
-    @apply 2xl:text-2xl xl:text-xl lg:text-2xl md:text-base sm:text-sm;
+    @apply text-[14px] lg:text-[16px];
   }
 
   .ourfeatures{
@@ -42,7 +51,14 @@
   background: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgb(0 0 0 / 14%) 85%,rgb(0 0 0 / 81%) 100%);
 }
 
+.scale-image {
+  transform: scale(8.5);
+    margin-left: 6px;
+    margin-top: 8px;
+}
+
 .herobtn {
+  font-family: 'Urbanist', sans-serif !important;
   background: linear-gradient(
     120deg,
     #cd378a 0.07%,
@@ -84,12 +100,15 @@
 }
 
 .herobtnWhite {
+  font-family: 'Urbanist', sans-serif !important;
   background: white;
   background-size: 200% 100%;
   box-shadow: 0 0.375rem 1.5rem 0 rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+ 
 }
 
 .herobtnWhite:after {
@@ -114,10 +133,24 @@
   transition: all 0s ease 0s;
 }
 
-.herobtnWhite:hover:after {
-  transform: translate3d(100%, 0, 0);
-  transition: all 0.6s ease 0s;
+.herobtnWhite:hover{
+  background: linear-gradient(
+    120deg,
+    #cd378a 0.07%,
+    #cc25e9 34.91%,
+    #9b04e7 50.51%,
+    #ba2175 65.6%,
+    #d00876 83.28%,
+    #9f30e8 97.84%
+  );
+  color: white;
 }
+
+// .herobtnWhite:hover:after {
+ 
+//   transform: translate3d(100%, 0, 0);
+//   transition: all 0.6s ease 0s;
+// }
 
 
 .sky-star {
@@ -622,3 +655,64 @@
 .staranim {
   animation: pulse 1s ease-in-out infinite;
 }
+
+#mmenu{
+  display: none;
+}
+
+
+/* mobile menu toggle button */
+.menu-toggle {
+	position: relative;
+	display:  inline-block;
+	width: 40px;
+	height: 30px;
+}
+.menu-toggle span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+	transition-duration: 0s;
+	transition-delay: .2s;
+  transition: background-color 0.3s;
+}
+.menu-toggle span:before, .menu-toggle span:after {
+	position: absolute;
+	content: '';
+}
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  display: block;
+  opacity: 1;
+}
+.menu-toggle span:before {
+	margin-top: -10px;
+	transition-property: margin, transform;
+	transition-duration: .2s;
+	transition-delay: .2s, 0;  
+}
+.menu-toggle span:after {
+	margin-top: 10px;
+	transition-property: margin, transform;
+	transition-duration: .2s;
+	transition-delay: .2s, 0;  
+}
+
+.menu-toggle-active span {
+  background-color: rgba(0,0,0,0);
+	transition: 0.3s background-color;
+}
+.menu-toggle-active span:before {
+	margin-top: 0;
+	transform: rotate(45deg);
+	transition-delay: 0, .2s;
+}
+.menu-toggle-active span:after {
+	margin-top: 0;
+	transform: rotate(-45deg);
+	transition-delay: 0, .2s;
+}
+
+
