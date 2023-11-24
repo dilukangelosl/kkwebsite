@@ -9,7 +9,7 @@
 }
 
 body {
-  overflow-x: hi;
+  overflow-x: hidden;
 }
 @layer components {
 
@@ -17,7 +17,7 @@ body {
     @apply mr-3
   }
   .feature-text{
-    @apply min-h-[60px] text-slate-200 text-[14px] md:text-[16px] font-light flex flex-col justify-center;
+    @apply min-h-[60px] text-slate-200 text-[14px] md:text-[19px] font-light flex flex-col justify-center;
   }
   .nav-a {
     @apply text-xl text-transparent bg-gradient-to-r from-white via-white to-white  bg-clip-text  hover:from-[#c887ab] hover:via-[#cd2280] hover:to-indigo-500 animate-text duration-500;
