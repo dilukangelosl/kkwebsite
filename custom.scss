@@ -8,6 +8,9 @@
   }
 }
 
+body {
+  overflow-x: hi;
+}
 @layer components {
 
   .icon-list{
@@ -716,3 +719,12 @@
 }
 
 
+
+
+.screens{
+  transform: scale(1.2) !important;
+}
+
+.screens:hover{
+  transform: scale(1.30) !important;
+}
