@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;800&display=swap"
     rel="stylesheet" />
+   
 </head>
 
 <body class="bg-black" id="scrollbody">
@@ -29,11 +30,11 @@
         <!-- primary nav -->
         <div class="hidden md:flex items-center justify-center space-x-[40px] primarynav">
           <a href="#" class="nav-a nav-text">Whitepaper</a>
-          <a href="#" class="nav-a nav-text">About Us</a>
-          <a href="#" class="nav-a nav-text">Platform tax</a>
-          <a href="#" class="nav-a nav-text">Rev Share</a>
-          <a href="#" class="nav-a nav-text">Tokenomics</a>
-          <a href="#" class="nav-a nav-text  text-[16px]">Presale</a>
+          <a href="#about-us" class="nav-a nav-text">About Us</a>
+          <a href="#platform-tax" class="nav-a nav-text">Platform tax</a>
+          <a href="#rev-share" class="nav-a nav-text">Rev Share</a>
+          <a href="#tokenomics" class="nav-a nav-text">Tokenomics</a>
+          <a href="#presale" class="nav-a nav-text  text-[16px]">Presale</a>
         </div>
         <!-- secondary nav -->
         <div class="hidden md:flex items-center space-x-3 my-1 mr-2">
@@ -144,7 +145,7 @@
 
   <div class="flex flex-col gap-8 md:gap-32">
     <!-- FEATURES 1  -->
-    <div class="container mx-auto z-10 px-8 md:px-10 md:pt-8 lg:px-10 lg:pl-16">
+    <div class="container mx-auto z-10 px-8 md:px-10 md:pt-8 lg:px-10 lg:pl-16" id="about-us">
       <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2">
         <div class="ourfeatures">
           <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
@@ -308,7 +309,7 @@
 
     <!-- FEATURES 3 -->
     <div class="container mx-auto z-10 px-8 md:px-10 lg:px-10 lg:pl-16">
-      <div class="flex flex-col-reverse md:flex-col gap-8 md:grid md:grid-cols-2">
+      <div class="flex flex-col-reverse md:flex-col gap-8 md:grid md:grid-cols-2" id="platform-tax">
         <div class="ourfeatures">
           <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
             <div class="h-full w-full py-1 rounded-md bg-black">
@@ -379,7 +380,7 @@
         </div>
 
         <div class="ourfeatures">
-          <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
+          <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]" id="rev-share">
             <div class="h-full w-full py-1 rounded-md bg-black">
               <span
                 class="block mx-auto bg-clip-text text-transparent w-full text-center bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] uppercase ">Revenue
@@ -415,8 +416,8 @@
 
 
     <!-- FEATURES 5 -->
-    <div class="container mx-auto z-10 px-8 md:px-10 lg:px-10 lg:pl-16">
-      <div class="flex flex-col-reverse md:flex-col gap-8 md:grid md:grid-cols-12">
+    <div class="container mx-auto z-10 px-8 md:px-10 lg:px-10 lg:pl-16" id="tokenomics">
+      <div class="flex flex-col-reverse md:flex-col gap-8 md:grid md:grid-cols-12" >
         <div class="ourfeatures md:col-span-4">
           <div class="sectiontitle w-44 rounded-md bg-gradient-to-r from-[#FF0FBC] via-[#d25bb8] to-[#FF0FBC] p-[1px]">
             <div class="h-full w-full py-1 rounded-md bg-black">
@@ -698,6 +699,34 @@ For Uniswap transactions, ensure that the slippage is set to 7-8%
     // .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
     // .pauseFor(1000)
     // .start();
+  </script>
+
+<script>
+  // $(document).ready(function(){
+  //   // Add smooth scrolling to all links
+  //   $("a").on('click', function(event) {
+  
+  //     // Make sure this.hash has a value before overriding default behavior
+  //     if (this.hash !== "") {
+  //       // Prevent default anchor click behavior
+
+  //       event.preventDefault();
+  
+  //       // Store hash
+  //       var hash = this.hash;
+  
+  //       // Using jQuery's animate() method to add smooth page scroll
+  //       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  //       $('html, body').animate({
+  //         scrollTop: $(hash).offset().top - 300
+  //       }, 300, function(){
+  
+  //         // Add hash (#) to URL when done scrolling (default click behavior)
+  //         window.location.hash = hash;
+  //       });
+  //     } // End if
+  //   });
+  // });
   </script>
 </body>
 
