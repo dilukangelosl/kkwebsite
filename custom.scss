@@ -46,6 +46,10 @@ body {
   .iconholder img{
     @apply w-[90%] mx-auto
   }
+
+  .helper {
+    @apply opacity-0
+  }
 }
 
 .feature-text{
