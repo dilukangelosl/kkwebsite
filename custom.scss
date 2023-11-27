@@ -55,6 +55,31 @@ body {
 .feature-text{
   flex: 1 !important;
 }
+
+.screens{
+  z-index: 50 !important;
+}
+
+.blur1{
+    right: -108px !important;
+    top: -45px !important;
+    height: 128% !important;
+    transform: scale(1.4) !important;
+}
+
+
+.blur2{
+  right: 52px !important;
+  top: -66px !important;
+  height: 128% !important;
+  transform: scale(1.2) !important;
+}
+
+.blur3{
+  right: 0px !important;
+  top: 70px !important;
+  height: 108% !important;
+}
  canvas {
   height: 80% !important;
   position: absolute;
