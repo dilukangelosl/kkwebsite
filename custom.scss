@@ -61,10 +61,10 @@ body {
 }
 
 .blur1{
-    right: -108px !important;
-    top: -45px !important;
-    height: 128% !important;
-    transform: scale(1.4) !important;
+  right: 0 !important;
+  top: -40px !important;
+  /* height: 153% !important; */
+  transform: scale(1.6) !important;
 }
 
 
@@ -76,9 +76,9 @@ body {
 }
 
 .blur3{
-  right: 0px !important;
-  top: 70px !important;
-  height: 108% !important;
+  right: 61px !important;
+    top: 23px !important;
+    height: 120% !important;
 }
  canvas {
   height: 80% !important;
