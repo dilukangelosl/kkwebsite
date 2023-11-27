@@ -39,8 +39,18 @@ body {
   .header-effect {
     @apply text-xl text-transparent bg-gradient-to-r  bg-clip-text from-[#c887ab] via-[#cd2280] to-indigo-500 animate-text duration-1000;
   }
+  .iconholder{
+    @apply  p-1 rounded-[6px] bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 w-8 h-8 flex justify-center items-center;
+  }
+
+  .iconholder img{
+    @apply w-[90%] mx-auto
+  }
 }
 
+.feature-text{
+  flex: 1 !important;
+}
  canvas {
   height: 80% !important;
   position: absolute;
